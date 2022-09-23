@@ -4,6 +4,11 @@ namespace Bakery.Models
 {
   public class Bread
   {
+    public string Type { get; set; }
+    public string Cost { get; set;}
+
+    
+    
     public int BreadCost(int numLoaves)
     {
       if (numLoaves == 1)
