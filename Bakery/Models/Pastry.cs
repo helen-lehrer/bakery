@@ -6,10 +6,10 @@ namespace Bakery.Models
   {
     public int PastryCost(int numPastry)
     {
-      // if (numLoaves == 1)
-      // {
-      //   return 5;
-      // }
+      if (numPastry == 1)
+      {
+        return 2;
+      }
       // else if (numLoaves == 2)
       // {
       //   return 10;
@@ -20,10 +20,10 @@ namespace Bakery.Models
       //   int convertToInt = Convert.ToInt32(dividedByThree);
       //   return ((numLoaves - convertToInt) * 5); 
       // }
-      // else 
-      // {
+      else 
+      {
         return 0;
-      // }
+      }
     }
   }
 }
