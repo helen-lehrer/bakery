@@ -98,3 +98,7 @@ C:\Users\HLehr\Onedrive\desktop\Bakery.Solution\Bakery.Tests\obj\Debug\net5.0\Ba
 C:\Users\HLehr\Onedrive\desktop\Bakery.Solution\Bakery.Tests\obj\Debug\net5.0\ref\Bakery.Tests.dll
 C:\Users\HLehr\Onedrive\desktop\Bakery.Solution\Bakery.Tests\obj\Debug\net5.0\Bakery.Tests.pdb
 C:\Users\HLehr\Onedrive\desktop\Bakery.Solution\Bakery.Tests\obj\Debug\net5.0\Bakery.Tests.genruntimeconfig.cache
+C:\Users\HLehr\Onedrive\desktop\Bakery.Solution\bakery.Tests\bin\Debug\net5.0\Bakery.deps.json
+C:\Users\HLehr\Onedrive\desktop\Bakery.Solution\bakery.Tests\bin\Debug\net5.0\Bakery.runtimeconfig.json
+C:\Users\HLehr\Onedrive\desktop\Bakery.Solution\bakery.Tests\bin\Debug\net5.0\Bakery.runtimeconfig.dev.json
+C:\Users\HLehr\Onedrive\desktop\Bakery.Solution\bakery.Tests\bin\Debug\net5.0\Bakery.exe

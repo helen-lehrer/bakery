@@ -7,24 +7,25 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void BreadCost_ReturnSingleLoafCost_True()
+    public void BreadCost_ReturnSingleLoafCost_Int()
     {
-      Bread bread = new Bread();
+      Bread bread = new Bread("white,", "5", "Buy 1, get 1 Free!");
       Assert.AreEqual(5, bread.BreadCost(1));
     }
 
     [TestMethod]
-    public void BreadCost_ReturnBogoCost_True()
+    public void BreadCost_ReturnBogoCost_Int()
     {
-      Bread bread = new Bread();
+      Bread bread = new Bread("white,", "5", "Buy 1, get 1 Free!");
       Assert.AreEqual(10, bread.BreadCost(3));
     }
 
     [TestMethod]
-    public void BreadCost_ReturnBogoCost_True()
+    public void GetType_ReturnsType_String()
     {
-      Bread bread = new Bread();
-      Assert.AreEqual(10, bread.BreadCost(3));
+      Bread bread = new Bread("white", "5", "Buy 1, get 1 Free!");
+      Assert.AreEqual("white", bread.Type);
     }
+
   }
 }
