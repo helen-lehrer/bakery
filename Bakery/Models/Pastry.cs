@@ -10,9 +10,9 @@ namespace Bakery.Models
 
     public Pastry(string type, string cost, string deals)
     {
-      // Type = type;
-      // Cost = cost;
-      // Deals = deals;
+      Type = type;
+      Cost = cost;
+      Deals = deals;
     }    
 
     public int PastryCost(int numPastry)
