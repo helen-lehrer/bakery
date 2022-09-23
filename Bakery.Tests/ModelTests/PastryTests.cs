@@ -26,5 +26,12 @@ namespace Bakery.Tests
       Pastry pastry = new Pastry();
       Assert.AreEqual(7, pastry.PastryCost(4));
     }  
+
+    [TestMethod]
+    public void PastryCost_ReturnFivePastriesCost_True()
+    {
+      Pastry pastry = new Pastry();
+      Assert.AreEqual(9, pastry.PastryCost(5));
+    }  
   }
 }
