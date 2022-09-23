@@ -17,7 +17,7 @@ namespace Bakery.Tests
     public void PastryCost_ReturnPastryDealsCost_True()
     {
       Pastry pastry = new Pastry();
-      Assert.AreEqual(3, pastry.PastryCost(5));
+      Assert.AreEqual(5, pastry.PastryCost(3));
     } 
   }
 }
