@@ -4,6 +4,13 @@ namespace Bakery.Models
 {
   public class Pastry
   {
+    public Pastry()
+    {
+      // Type = type;
+      // Cost = cost;
+      // Deals = deals;
+    }    
+
     public int PastryCost(int numPastry)
     {
       if (numPastry == 3 || numPastry == 4 || numPastry == 5)
