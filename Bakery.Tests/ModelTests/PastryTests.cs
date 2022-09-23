@@ -14,10 +14,17 @@ namespace Bakery.Tests
     } 
 
     [TestMethod]
-    public void PastryCost_ReturnPastryDealsCost_True()
+    public void PastryCost_ReturnThreePastriesCost_True()
     {
       Pastry pastry = new Pastry();
       Assert.AreEqual(5, pastry.PastryCost(3));
-    } 
+    }
+
+    [TestMethod]
+    public void PastryCost_ReturnFourPastriesCost_True()
+    {
+      Pastry pastry = new Pastry();
+      Assert.AreEqual(7, pastry.PastryCost(4));
+    }  
   }
 }
