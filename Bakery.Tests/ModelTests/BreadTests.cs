@@ -9,15 +9,15 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadCost_ReturnSingleLoafCost_True()
     {
-        Bread bread = new Bread();
-        Assert.AreEqual(5, bread.BreadCost(1));
+      Bread bread = new Bread();
+      Assert.AreEqual(5, bread.BreadCost(1));
     }
 
     [TestMethod]
     public void BreadCost_ReturnBogoCost_True()
     {
-        Bread bread = new Bread();
-        Assert.AreEqual(85, bread.BreadCost(25));
+      Bread bread = new Bread();
+      Assert.AreEqual(10, bread.BreadCost(3));
     }
   }
 }
