@@ -36,26 +36,31 @@ Enter this command into your terminal to clone the project:
 $ git clone https://github.com/helen-lehrer/bakery/
 ```
 
+Navigate from the root directory of the repo into the folder `Bakery`:
+```bash
+$ cd Bakery
+```
+
+Compile the code: 
+```bash
+$ dotnet build
+```
+
 ---
 
-#### Follow these instructions to set up MSTest:
+#### Follow these instructions in your command line to set up **MSTest**:
 
-Navigate from the root directory of the repo into the folder `Bakery` and type this into your command line to download MSTest: 
+Navigate from the root directory of the repo to folder `Bakery.Tests`: 
+```bash
+$ cd Bakery.Tests
+```
+
+Download & install MSTest: 
 ```bash
 $ dotnet restore
 ```
 
-Next, navigate to folder `Bakery.Tests`: 
-```bash
-$ cd ../Bakery.Tests
-```
-
-Then, type this into your command line again: 
-```bash
-$ dotnet restore
-```
-
-To run MSTest: 
+To run MSTest, type this into your command line while you are inside of the Bakery.Tests folder: 
 ```bash
 $ dotnet test
 ```
