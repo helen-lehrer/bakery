@@ -6,24 +6,20 @@ namespace Bakery.Models
   {
     public int PastryCost(int numPastry)
     {
-      if (numPastry == 1)
-      {
-        return 2;
-      }
-      // else if (numLoaves == 2)
+      // if (numPastry == 3 || numPastry == 4 || numPastry == 5)
       // {
-      //   return 10;
+      //   return (numPastry * 2) - 1;
       // }
-      // else if (numLoaves >= 3)
+      // else if (numPastry > 5)
       // {
-      //   decimal dividedByThree = Decimal.Floor(numLoaves / 3);
-      //   int convertToInt = Convert.ToInt32(dividedByThree);
-      //   return ((numLoaves - convertToInt) * 5); 
+      //   decimal dividedBySix = Decimal.Floor(numPastry / 6);
+      //   int convertToInt = Convert.ToInt32(dividedBySix);
+      //   return ((numPastry * 2) - (convertToInt * 2));
       // }
-      else 
-      {
+      // else 
+      // {
         return 0;
-      }
+  //     }
     }
   }
 }
