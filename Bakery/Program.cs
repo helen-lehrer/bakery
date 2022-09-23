@@ -6,12 +6,14 @@ class Program
   public static void Main()
   {
     //Constructors
-    Bread bread = new Bread("white", "5", "Buy 2, get 1 free!");
-    Pastry pastry = new Pastry("croissant", "2", "3 for $5! 4 for $7! 5 for $9! 6 for $10!");
+    string[] breadTypes = {"white", "whole wheat", "pumpernickel"};
+    string[] pastryTypes = {"croissant", "puff", "macaron"};
+    Bread bread = new Bread(breadTypes, "5", "Buy 2, get 1 free!");
+    Pastry pastry = new Pastry(pastryTypes, "2", "3 for $5! 4 for $7! 5 for $9! 6 for $10!");
     //Menu
     Console.WriteLine("Welcome to Pierre's Bakery!");
     Console.WriteLine("------Menu------");
-    Console.WriteLine("BREAD\nPrice: $" + bread.Cost + "\nDeals: " + bread.Deals +"\n");
+    Console.WriteLine("BREAD\nVarieties: "+ bread.Type[0] + ", " + bread.Type[1] + ", " + bread.Type[2]+"\nPrice: $" + bread.Cost + "\nDeals: " + bread.Deals +"\n");
      Console.WriteLine("PASTRIES\nPrice: $" + pastry.Cost + "\nDeals: " + pastry.Deals +"\n----------------");
      //Order
      Console.WriteLine("How many loaves of bread would you like to order?");

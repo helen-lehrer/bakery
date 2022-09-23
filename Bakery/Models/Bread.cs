@@ -4,11 +4,11 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public string Type { get; set;}
+    public string[] Type { get; set;}
     public string Cost { get; set;}
     public string Deals {get; set;}
 
-    public Bread(string type, string cost, string deals)
+    public Bread(string[] type, string cost, string deals)
     {
       Type = type;
       Cost = cost;

@@ -16,7 +16,7 @@
 The current deals are:
 
 * `Bread`: Buy 2, get 1 free (every 3rd loaf of bread is free.). A single loaf costs $5, two loaves costs $10, and three loaves cost $10.
-* `Pastry`: Buy 1 for $2 or 3 for $5. Four pastries costs $7, five pastries costs $9, and six pastries costs $10.
+* `Pastry`: Buy 1 for $2, 3 for $5, 4 for $7, 4 for $9, and 6 for $10.
 
 The user will be prompted to input the number of loaves and pastries they would like to order. The application will calculate the total price of each item and the total order based on the current deals and display it to the user.
 
@@ -55,12 +55,12 @@ Navigate from the root directory of the repo to folder `Bakery.Tests`:
 $ cd Bakery.Tests
 ```
 
-Download & install MSTest: 
+Download & install **MSTest**: 
 ```bash
 $ dotnet restore
 ```
 
-To run MSTest, type this into your command line while you are inside of the Bakery.Tests folder: 
+To run **MSTest**, type this into your command line while you are inside of the Bakery.Tests folder: 
 ```bash
 $ dotnet test
 ```
@@ -68,6 +68,13 @@ $ dotnet test
 ---
 
 #### To run the application: 
+
+Navigate from the root directory of the repo into the folder `Bakery`:
+```bash
+$ cd Bakery
+```
+
+Run the application:
 ```bash
 $ dotnet run
 ```

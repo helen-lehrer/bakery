@@ -9,29 +9,33 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadCost_ReturnSingleLoafCost_Int()
     {
-      Bread bread = new Bread("white,", "5", "Buy 1, get 1 Free!");
+      string[] breadTypes = {"white", "whole wheat", "pumpernickel"};
+      Bread bread = new Bread(breadTypes, "5", "Buy 1, get 1 Free!");
       Assert.AreEqual(5, bread.BreadCost(1));
     }
 
     [TestMethod]
     public void BreadCost_ReturnBogoCost_Int()
     {
-      Bread bread = new Bread("white,", "5", "Buy 1, get 1 Free!");
+      string[] breadTypes = {"white", "whole wheat", "pumpernickel"};
+      Bread bread = new Bread(breadTypes, "5", "Buy 1, get 1 Free!");
       Assert.AreEqual(10, bread.BreadCost(3));
     }
 
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      Bread bread = new Bread("white", "5", "Buy 1, get 1 Free!");
+      string[] breadTypes = {"white", "whole wheat", "pumpernickel"};
+      Bread bread = new Bread(breadTypes, "5", "Buy 1, get 1 Free!");
       Assert.AreEqual(typeof(Bread), bread.GetType());
     }
 
     [TestMethod]
-    public void GetType_ReturnsType_String()
+    public void GetCost_ReturnsCost_String()
     {
-      Bread bread = new Bread("white", "5", "Buy 1, get 1 Free!");
-      Assert.AreEqual("white", bread.Type);
+      string[] breadTypes = {"white", "whole wheat", "pumpernickel"};
+      Bread bread = new Bread(breadTypes, "5", "Buy 1, get 1 Free!");
+      Assert.AreEqual("5", bread.Cost);
     }
 
   }
