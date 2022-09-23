@@ -14,16 +14,23 @@ class Program
     Console.WriteLine("Welcome to Pierre's Bakery!");
     Console.WriteLine("------Menu------");
     Console.WriteLine("BREAD\nVarieties: "+ bread.Type[0] + ", " + bread.Type[1] + ", " + bread.Type[2]+"\nPrice: $" + bread.Cost + "\nDeals: " + bread.Deals +"\n");
-     Console.WriteLine("PASTRIES\nPrice: $" + pastry.Cost + "\nDeals: " + pastry.Deals +"\n----------------");
+     Console.WriteLine("PASTRIES\nVarieties: " + pastry.Type[0] + ", " + pastry.Type[1] + ", " + pastry.Type[2]+"\nPrice: $" + pastry.Cost + "\nDeals: " + pastry.Deals +"\n----------------");
      //Order
      Console.WriteLine("How many loaves of bread would you like to order?");
      string stringNumLoaves = Console.ReadLine();
-     int intNumLoaves = Int32.Parse(stringNumLoaves);Console.WriteLine("How many pastries would you like to order?");
+     int intNumLoaves = Int32.Parse(stringNumLoaves);
+     if (stringNumLoaves != "0")
+     {
+      Console.WriteLine("What variety of bread would you like? (white, whole wheat, or pumpernickel)\n*please type your selection in all lower-case*");
+      string breadTypeInput = Console.ReadLine();
+      string breadTypeSelection = 
+     }
+     Console.WriteLine("How many pastries would you like to order?");
      string stringNumPastries = Console.ReadLine();
      int intNumPastries = Int32.Parse(stringNumPastries);
      int totalCost = bread.BreadCost(intNumLoaves) + pastry.PastryCost(intNumPastries);
      //Display Total Cost
-     Console.WriteLine(stringNumLoaves +" Order(s) of Bread: $" + bread.BreadCost(intNumLoaves));
+     Console.WriteLine(stringNumLoaves +" Order(s) of Bread: $" + bread.BreadCost(intNumLoaves) + " (" + breadTypeSelection + ")");
      Console.WriteLine(stringNumPastries +" Order(s) of Pastries: $" + pastry.PastryCost(intNumPastries));
      Console.WriteLine("Total Cost = $" + totalCost);
      //Exit App or Return to Menu

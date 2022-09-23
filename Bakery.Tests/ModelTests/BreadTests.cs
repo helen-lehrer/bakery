@@ -38,5 +38,13 @@ namespace Bakery.Tests
       Assert.AreEqual("5", bread.Cost);
     }
 
+    [TestMethod]
+    public void BreadType_ReturnsType_String()
+    {
+      string[] breadTypes = {"white", "whole wheat", "pumpernickel"};
+      Bread bread = new Bread(breadTypes, "5", "Buy 1, get 1 Free!");
+      Assert.AreEqual("white", bread.assignType);
+    }
+
   }
 }
