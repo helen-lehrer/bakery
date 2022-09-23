@@ -7,7 +7,11 @@ namespace Bakery.Models
     public string Type { get; set; }
     public string Cost { get; set;}
 
-    
+    public Bread(string type, string cost)
+    {
+      // Type = type;
+      // Cost = cost;
+    }    
     
     public int BreadCost(int numLoaves)
     {
