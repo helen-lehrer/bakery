@@ -5,9 +5,31 @@ class Program
 {
   public static void Main()
   {
-    // Bread bread = new Bread("white", "5", "Buy 2, get 1 free!");
-
-    // Console.WriteLine("Welcome to Pierre's Bakery!");
-    // Console.WriteLine("------Menu------\nBREAD\nPrice: $" + bread.Cost + "\nDeals:" + bread.Deals +"\n\n");
+    //Constructors
+    Bread bread = new Bread("white", "5", "Buy 2, get 1 free!");
+    Pastry pastry = new Pastry("croissant", "2", "3 for $5! 4 for $7! 5 for $9! 6 for $10!");
+    //Menu
+    Console.WriteLine("Welcome to Pierre's Bakery!");
+    Console.WriteLine("------Menu------");
+    Console.WriteLine("BREAD\nPrice: $" + bread.Cost + "\nDeals: " + bread.Deals +"\n");
+     Console.WriteLine("PASTRIES\nPrice: $" + pastry.Cost + "\nDeals: " + pastry.Deals +"\n----------------");
+     //Order
+     Console.WriteLine("How many loaves of bread would you like to order?");
+     string stringNumLoaves = Console.ReadLine();
+     int intNumLoaves = Int32.Parse(stringNumLoaves);Console.WriteLine("How many pastries would you like to order?");
+     string stringNumPastries = Console.ReadLine();
+     int intNumPastries = Int32.Parse(stringNumPastries);
+     int totalCost = bread.BreadCost(intNumLoaves) + pastry.PastryCost(intNumPastries);
+     //Display Total Cost
+     Console.WriteLine(stringNumLoaves +" Order(s) of Bread: $" + bread.BreadCost(intNumLoaves));
+     Console.WriteLine(stringNumPastries +" Order(s) of Pastries: $" + pastry.PastryCost(intNumPastries));
+     Console.WriteLine("Total Cost = $" + totalCost);
+     //Exit App or Return to Menu
+     Console.WriteLine("Would you like to place another order? (Y/N)");
+     string exitApp = Console.ReadLine();
+     if (exitApp == "Y" | exitApp == "y")
+     {
+      Main();
+     }
   }
 }
