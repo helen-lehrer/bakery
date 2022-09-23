@@ -17,7 +17,7 @@ namespace Bakery.Tests
     public void BreadCost_ReturnBogoCost_True()
     {
         Bread bread = new Bread();
-        Assert.AreEqual(35, bread.BreadCost(10));
+        Assert.AreEqual(85, bread.BreadCost(25));
     }
   }
 }
