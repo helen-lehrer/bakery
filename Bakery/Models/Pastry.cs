@@ -6,7 +6,7 @@ namespace Bakery.Models
   {
     public int PastryCost(int numPastry)
     {
-      if (numPastry == 3 || numPastry == 5)
+      if (numPastry == 3 || numPastry == 4)
       {
         return ((numPastry * 2) - 1);
       }
