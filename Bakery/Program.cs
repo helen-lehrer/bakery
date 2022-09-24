@@ -19,17 +19,16 @@ class Program
      Console.WriteLine("How many loaves of bread would you like to order?");
      string stringNumLoaves = Console.ReadLine();
      int intNumLoaves = Int32.Parse(stringNumLoaves);
-     if (stringNumLoaves != "0")
+     if (intNumLoaves != 0)
      {
-      Console.WriteLine("What variety of bread would you like?\nEnter 1 for white, 2 whole wheat, or 3 for pumpernickel");
-      string breadTypeInput = Console.ReadLine();
+      breadVariety();
      }
      Console.WriteLine("How many pastries would you like to order?");
      string stringNumPastries = Console.ReadLine();
      int intNumPastries = Int32.Parse(stringNumPastries);
      int totalCost = bread.BreadCost(intNumLoaves) + pastry.PastryCost(intNumPastries);
      //Display Total Cost
-     Console.WriteLine(stringNumLoaves +" Order(s) of Bread: $" + bread.BreadCost(intNumLoaves) + " (" + ")");
+     Console.WriteLine(stringNumLoaves +" Order(s) of Bread: $" + bread.BreadCost(intNumLoaves));
      Console.WriteLine(stringNumPastries +" Order(s) of Pastries: $" + pastry.PastryCost(intNumPastries));
      Console.WriteLine("Total Cost = $" + totalCost);
      //Exit App or Return to Menu
@@ -38,6 +37,16 @@ class Program
      if (exitApp == "Y" | exitApp == "y")
      {
       Main();
+     }
+     void breadVariety()
+     {
+      Console.WriteLine("What variety of bread would you like?\nEnter 1 for white, 2 whole wheat, or 3 for pumpernickel");
+      string breadTypeInput = Console.ReadLine();
+      string breadTypeOutput = bread.assignType(breadTypeInput, bread);
+      if (breadTypeOutput == "You've entered an incorrect input. Please enter 1, 2, or 3.")
+      {
+        breadVariety();
+      }
      }
   }
 }
