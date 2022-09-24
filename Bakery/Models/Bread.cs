@@ -15,25 +15,24 @@ namespace Bakery.Models
       Deals = deals;
     }
 
-    public int assignType (string breadTypeInput)
+    public string assignType (int breadTypeInput)
     {
-      if (breadTypeInput == "white")
-      {
-        return bread.Type[0];
-      }
-      else if (breadTypeInput == "whole wheat")
-      {
-        return bread.Type[1];
-      }
-      else if (breadTypeInput == "pumpernickel")
-      {
-        return bread.Type[2];
-      }
-      else 
-      {
+      // if (breadTypeInput == "white")
+      // {
+      //   return bread.Type[0];
+      // }
+      // else if (breadTypeInput == "whole wheat")
+      // {
+      //   return bread.Type[1];
+      // }
+      // else if (breadTypeInput == "pumpernickel")
+      // {
+      //   return bread.Type[2];
+      // }
+      // else 
+      // {
         return "Sorry, we do not have that variety. If it is listed on the menu, check for typos.";
-      }
-    }    
+      }   
     
     public int BreadCost(int numLoaves)
     {

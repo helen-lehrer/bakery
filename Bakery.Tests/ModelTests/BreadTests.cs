@@ -43,7 +43,7 @@ namespace Bakery.Tests
     {
       string[] breadTypes = {"white", "whole wheat", "pumpernickel"};
       Bread bread = new Bread(breadTypes, "5", "Buy 1, get 1 Free!");
-      Assert.AreEqual("white", bread.assignType);
+      Assert.AreEqual("white", bread.assignType(1));
     }
 
   }

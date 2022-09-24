@@ -21,16 +21,15 @@ class Program
      int intNumLoaves = Int32.Parse(stringNumLoaves);
      if (stringNumLoaves != "0")
      {
-      Console.WriteLine("What variety of bread would you like? (white, whole wheat, or pumpernickel)\n*please type your selection in all lower-case*");
+      Console.WriteLine("What variety of bread would you like?\nEnter 1 for white, 2 whole wheat, or 3 for pumpernickel");
       string breadTypeInput = Console.ReadLine();
-      string breadTypeSelection = 
      }
      Console.WriteLine("How many pastries would you like to order?");
      string stringNumPastries = Console.ReadLine();
      int intNumPastries = Int32.Parse(stringNumPastries);
      int totalCost = bread.BreadCost(intNumLoaves) + pastry.PastryCost(intNumPastries);
      //Display Total Cost
-     Console.WriteLine(stringNumLoaves +" Order(s) of Bread: $" + bread.BreadCost(intNumLoaves) + " (" + breadTypeSelection + ")");
+     Console.WriteLine(stringNumLoaves +" Order(s) of Bread: $" + bread.BreadCost(intNumLoaves) + " (" + ")");
      Console.WriteLine(stringNumPastries +" Order(s) of Pastries: $" + pastry.PastryCost(intNumPastries));
      Console.WriteLine("Total Cost = $" + totalCost);
      //Exit App or Return to Menu
