@@ -79,3 +79,12 @@ Run the application:
 $ dotnet run
 ```
 
+## Known Bugs
+
+* None
+
+## License
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
+&copy; _Copyright 2022 Helen Lehrer_
+
